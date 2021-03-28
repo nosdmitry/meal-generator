@@ -5,7 +5,8 @@ class Api {
   }
 
   search(queryRequet) {
-    console.log(queryRequet);
+    return fetch(`${this._baseUrl}/search.php?s=${queryRequet}`)
+      .then(res => res.ok ? res.json() : Promise.reject(res.status))
   }
 
   handleRandomQuery() {
