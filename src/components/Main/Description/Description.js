@@ -20,7 +20,7 @@ function Description(props) {
           })
         }
       </ul>
-      <article className="cooking__description">
+      <article className="cooking__instruction">
         { props.instructions }
       </article>
     </section>

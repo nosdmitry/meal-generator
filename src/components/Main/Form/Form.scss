@@ -2,4 +2,7 @@ $backgroundColor: #282c34;
 
 .input-form {
   background-color: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
