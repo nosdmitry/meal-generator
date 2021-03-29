@@ -1,0 +1,17 @@
+.footer {
+  background-color: #282c34;
+  color: rgb(245, 244, 244);
+  display: flex;
+
+  &__copyright {
+    margin: 0;
+    padding: 10px 0 10px 20px;
+  }
+
+  &__link {
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    color: rgb(245, 244, 244);
+  }
+
+}

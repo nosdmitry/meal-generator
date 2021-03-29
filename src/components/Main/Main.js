@@ -64,7 +64,7 @@ function Main() {
   }, [searchQuery]);
 
   return (
-    <main>
+    <main className="main">
       <section className="input-form">
         {/* <Form
           onSubmit={() => handleSubmitButton}

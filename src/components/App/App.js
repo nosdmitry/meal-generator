@@ -1,6 +1,7 @@
 import './App.scss';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 //import api from '../../utils/Api';
 
 function App() {
@@ -12,9 +13,8 @@ function App() {
 
       <Main />
 
-      <footer>
-
-      </footer>
+      <Footer />
+      
     </div>
   );
 }
