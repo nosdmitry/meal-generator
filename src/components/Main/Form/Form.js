@@ -8,6 +8,7 @@ function Form({ onSubmit }) {
         <input type="text" className="col" placeholder="Enter something" />
         <Button
           title="Search"
+          className="input-form__button"
         />
       </div>
     </form>

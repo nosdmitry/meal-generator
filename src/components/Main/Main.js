@@ -4,9 +4,11 @@ import api from '../../utils/Api';
 import { useEffect, useState } from "react";
 import Button from "./Button/Button";
 import Ingredients from "./Description/Ingredients";
+import Intro from "./Intro/Intro";
 
 function Main() {
 
+  const [isIntroVisible, setIsIntroVisible] = useState(true);
   const [reciepe, setReciepe] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
   const [ingredients, setIngredients] = useState({
@@ -17,6 +19,7 @@ function Main() {
   function handleRandomButton(event) {
     event.preventDefault();
     handleRandomRequest();
+    setIsIntroVisible(false);
   }
 
   function handleRandomRequest() {
@@ -29,7 +32,6 @@ function Main() {
           const ingr = 'strIngredient' + i;
           const meas = 'strMeasure' + i;
           if (data.meals[0][ingr] === "" || data.meals[0][ingr] === null) { break; }
-          
           inrgArray.push(data.meals[0][ingr]);
           measureArray.push(data.meals[0][meas]);
 
@@ -53,9 +55,9 @@ function Main() {
     handleQueryRequest()
   }
 
-  useEffect(() => {
-    handleRandomRequest();
-  }, [])
+  // useEffect(() => {
+  //   handleRandomRequest();
+  // }, [])
 
   useEffect(() => {
     handleQueryRequest()
@@ -64,22 +66,31 @@ function Main() {
   return (
     <main>
       <section className="input-form">
-        <Form
+        {/* <Form
           onSubmit={() => handleSubmitButton}
-        />
+        /> */}
         <Button
+          className="input-form__button"
           title="Surprise me"
           onHandle={handleRandomButton}
         />
       </section>
+      <section className="cooking">
+      {
+        isIntroVisible 
+          ? <Intro />
+          : <Description
+            title={ reciepe.strMeal }
+            src={ reciepe.strMealThumb }
+            instructions={ reciepe.strInstructions }
+            ingredients={ ingredients.ingredients }
+            measure={ ingredients.measure }
+           />
+      }
+      </section>
+      
 
-      <Description
-        title={ reciepe.strMeal }
-        src={ reciepe.strMealThumb }
-        instructions={ reciepe.strInstructions }
-        ingredients={ ingredients.ingredients }
-        measure={ ingredients.measure }
-      />
+      
     </main>
   );
 }

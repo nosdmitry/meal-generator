@@ -7,6 +7,16 @@
   box-sizing: border-box;
 
   &__title {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+  }
+
+  &__title_type_reciepe {
+    padding-bottom: 20px;
+  }
+
+  &__subtitle {
     min-width: 100%;
   }
 

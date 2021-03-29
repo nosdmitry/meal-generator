@@ -1,7 +1,7 @@
 function Button(props) {
   return (
     <button 
-      className="col"
+      className={ props.className }
       onClick={ props.onHandle }
     >
       {props.title}
