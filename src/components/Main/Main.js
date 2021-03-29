@@ -34,7 +34,6 @@ function Main() {
           if (data.meals[0][ingr] === "" || data.meals[0][ingr] === null) { break; }
           inrgArray.push(data.meals[0][ingr]);
           measureArray.push(data.meals[0][meas]);
-
         }
         setIngredients({
           ingredients: inrgArray,
@@ -54,10 +53,6 @@ function Main() {
     event.preventDefault();
     handleQueryRequest()
   }
-
-  // useEffect(() => {
-  //   handleRandomRequest();
-  // }, [])
 
   useEffect(() => {
     handleQueryRequest()

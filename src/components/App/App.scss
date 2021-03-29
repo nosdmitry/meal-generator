@@ -1,11 +1,19 @@
 $backgroundColor: #282c34;
 
+#root {
+  height: 100%;
+}
+
 .App {
+  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  height: 100%;
+  border: 1px solid black;
 }
 
 .main {
-  height: 100%;
+  flex: 1 0 auto;
 }

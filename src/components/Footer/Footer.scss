@@ -1,7 +1,9 @@
 .footer {
+  flex-basis: 20px;
   background-color: #282c34;
   color: rgb(245, 244, 244);
   display: flex;
+  flex: 0 0 auto;
 
   &__copyright {
     margin: 0;
