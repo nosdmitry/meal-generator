@@ -10,9 +10,13 @@ $backgroundColor: #282c34;
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+  height: 100%;
   border: 1px solid black;
+  box-sizing: border-box;
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
 }
