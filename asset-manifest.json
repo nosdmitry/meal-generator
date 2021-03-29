@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/meal-generator/static/css/main.8faf5b5c.chunk.css",
+    "main.css": "/meal-generator/static/css/main.46ecc7b6.chunk.css",
     "main.js": "/meal-generator/static/js/main.0b03de4f.chunk.js",
     "main.js.map": "/meal-generator/static/js/main.0b03de4f.chunk.js.map",
     "runtime-main.js": "/meal-generator/static/js/runtime-main.a09123a0.js",
@@ -8,14 +8,14 @@
     "static/js/2.24a658b0.chunk.js": "/meal-generator/static/js/2.24a658b0.chunk.js",
     "static/js/2.24a658b0.chunk.js.map": "/meal-generator/static/js/2.24a658b0.chunk.js.map",
     "index.html": "/meal-generator/index.html",
-    "static/css/main.8faf5b5c.chunk.css.map": "/meal-generator/static/css/main.8faf5b5c.chunk.css.map",
+    "static/css/main.46ecc7b6.chunk.css.map": "/meal-generator/static/css/main.46ecc7b6.chunk.css.map",
     "static/js/2.24a658b0.chunk.js.LICENSE.txt": "/meal-generator/static/js/2.24a658b0.chunk.js.LICENSE.txt",
     "static/media/chickenLoading.f8efde86.svg": "/meal-generator/static/media/chickenLoading.f8efde86.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a09123a0.js",
     "static/js/2.24a658b0.chunk.js",
-    "static/css/main.8faf5b5c.chunk.css",
+    "static/css/main.46ecc7b6.chunk.css",
     "static/js/main.0b03de4f.chunk.js"
   ]
 }
